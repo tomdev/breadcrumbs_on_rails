@@ -87,20 +87,20 @@ Using the ElementBuilder requires the following:
 
 Add the requirement to you environment:
 
-  require 'breadcrumbs_on_rails/breadcrumbs/element_builder'
+    require 'breadcrumbs_on_rails/breadcrumbs/element_builder'
 
 And use the following render_breadcrumbs tag:
 
-  <%= render_breadcrumbs(
-      builder: BreadcrumbsOnRails::Breadcrumbs::ElementBuilder
-    ).html_safe %>
+    <%= render_breadcrumbs(
+        builder: BreadcrumbsOnRails::Breadcrumbs::ElementBuilder
+      ).html_safe %>
 
 Or pass an element to render in:
 
-<%= render_breadcrumbs(
-      builder: BreadcrumbsOnRails::Breadcrumbs::ElementBuilder,
-      element: :div
-    ).html_safe %>
+    <%= render_breadcrumbs(
+        builder: BreadcrumbsOnRails::Breadcrumbs::ElementBuilder,
+        element: :div
+      ).html_safe %>
 
 
 ## Credits
