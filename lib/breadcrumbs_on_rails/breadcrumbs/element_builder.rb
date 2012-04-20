@@ -32,7 +32,7 @@ module BreadcrumbsOnRails
 
 			def render_element(element)
         url = (compute_path(element).present? ? compute_path(element) : '#')
-        content = @context.link_to_unless_current(compute_name(element), url)
+        content = @context.link_to(compute_name(element), url)
         @context.content_tag(@options[:element] || :li, content)
       end
 
