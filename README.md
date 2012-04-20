@@ -79,6 +79,29 @@ More complex customizations require a custom Builder.
 
 Read the [documentation](http://www.simonecarletti.com/code/breadcrumbs_on_rails/docs/) to learn more about advanced usage and builders.
 
+## Custom element
+
+Links in the Breadcrumbs can be build within a specific element. This defaults to a <li>. Other elements can be specififed, to for example render the link within a <div> element.
+
+Using the ElementBuilder requires the following:
+
+Add the requirement to you environment:
+
+  require 'breadcrumbs_on_rails/breadcrumbs/element_builder'
+
+And use the following render_breadcrumbs tag:
+
+  <%= render_breadcrumbs(
+      builder: BreadcrumbsOnRails::Breadcrumbs::ElementBuilder
+    ).html_safe %>
+
+Or pass an element to render in:
+
+<%= render_breadcrumbs(
+      builder: BreadcrumbsOnRails::Breadcrumbs::ElementBuilder,
+      element: :div
+    ).html_safe %>
+
 
 ## Credits
 
