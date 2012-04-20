@@ -81,7 +81,7 @@ Read the [documentation](http://www.simonecarletti.com/code/breadcrumbs_on_rails
 
 ## Custom element
 
-Links in the Breadcrumbs can be build within a specific element. This defaults to a <li>. Other elements can be specififed, to for example render the link within a <div> element.
+Links in the Breadcrumbs can be build within a specific element. This defaults to a &lt;li&gt;. Other elements can be specififed, to for example render the link within a &lt;div&gt; element.
 
 Using the ElementBuilder requires the following:
 
